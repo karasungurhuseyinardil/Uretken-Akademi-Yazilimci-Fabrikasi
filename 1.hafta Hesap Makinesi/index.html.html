@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hüseyin Ardıl Karasungur-Hesap Makinesi</title>
+        <meta content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=No" name="viewport" />
+        <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Üretken Akademi - Hesap Makinesi</h1>
+            <div class="calculator-wrapper">
+                <div class="calculator-item">
+                    <input type="text" id="content" disabled/>  
+                </div>
+                <div class="calculator-item">
+                    <input type="button" value="1" onclick="process('1')"/>
+                    <input type="button" value="2" onclick="process('2')"/>
+                    <input type="button" value="3" onclick="process('3')"/>
+                    <input class="process" type="button" value="/" onclick="process('/')"/>
+                </div>
+                <div class="calculator-item">
+                    <input type="button" value="4" onclick="process('4')"/>
+                    <input type="button" value="5" onclick="process('5')"/>
+                    <input type="button" value="6" onclick="process('6')"/>
+                    <input class="process" type="button" value="*" onclick="process('*')"/>
+                </div>
+                <div class="calculator-item">
+                    <input type="button" value="7" onclick="process('7')"/>
+                    <input type="button" value="8" onclick="process('8')"/>
+                    <input type="button" value="9" onclick="process('9')"/>
+                    <input class="process" type="button" value="-" onclick="process('-')"/>
+                </div>
+                <div class="calculator-item">
+                    <input type="button" value="." onclick="process('.')"/>
+                    <input type="button" value="0" onclick="process('0')"/>
+                    <input class="delete" type="button" value="C" onclick="del()"/>
+                    <input class="process" type="button" value="+" onclick="process('+')"/>
+                </div>
+                <div class="calculator-item">
+                    <input class="match" type="button" value="Hesapla" onclick="match()"/>    
+                </div>
+            </div>
+        </div>
+<script src="assets/js/app.js"></script>
+    </body>
+</html>
